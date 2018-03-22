@@ -24,7 +24,7 @@ void loop() {
     // NOTE: led is ONLY active when button is not pressed(on the otherword "after release pressing")
     if(buttonState == 0 && lastButtonState == 1){ // this statement is "true"
       toggleState =! toggleState;  // so, toggleState -> 1, because buttonState = 0 (is NOT pressed)
-      digitalWrite(ledPin, toggleState); // turn on led.
+      digitalWrite(ledPin, toggleState); // active led.
       lastButtonState = 0; // flip button's state (preparation for the next "if" statement).
     } //at first execution LED is ON.
     
